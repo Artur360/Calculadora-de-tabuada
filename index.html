@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+
+<body>
+
+    <div id="container">
+      <span id="span1"> <h2>Gerador de Tabuada</h2></span> 
+        <input type="number" id="numInput" placeholder="Digite um número">
+        <button onclick="geradorTabuada()" id="button1">Gerar tabuada</button>
+        <div id="tabuada"></div>
+    </div>
+
+
+    <script>
+
+        function geradorTabuada() {
+
+            var numInput = document.getElementById("numInput").value;
+
+            var tabuadaDiv = document.getElementById("tabuada");
+
+            tabuadaDiv.innerHTML = "";
+
+            if (!numInput || isNaN(numInput)) {
+                tabuadaDiv.innerHTML = "<p> Por favor, insira um número válido.</p>";
+                return;
+            }
+
+            var tableHTMl = "<h3 class='a2'> <span class='a3'> Tabuada </span> do   " + numInput + " </h3> <table> <tr> <th > Número </th> <th class='a1'>Resultado</th> </tr> ";
+
+
+            for (var i = 1; i <= 10; i++) {
+
+                tableHTMl += "<tr><td>" + numInput + " X " + i + "</td><td class='a4'>" + (numInput * i) + "</td></tr>";
+
+            }
+
+tableHTMl += "</table>";
+tabuadaDiv.innerHTML = tableHTMl;
+
+
+
+        }
+
+    </script>
+
+
+
+
+</body>
+
+</html>

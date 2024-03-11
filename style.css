@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+*{
+box-sizing: border-box;
+margin: 0%;
+padding: 0%;
+}
+
+body{
+
+background-image: url(wood-8196_1280.jpg);
+
+}
+
+#container{
+display: flex;
+align-items: center;
+flex-direction: column;
+margin-top: 2%;
+}
+
+input{
+    border-radius: 10px;
+padding: 30px;
+margin: 50px;
+margin-bottom: 30px;
+font-size: x-large;
+font-family: f1;
+border: 0px;
+}
+
+@font-face {
+    font-family: f1;
+    src: url(Dunkin\ Bold.otf);
+}
+
+@font-face {
+    font-family: f2;
+    src: url(Heavitas.ttf);
+}
+
+@font-face {
+    font-family: f3;
+    src: url(LEMONMILK-Bold.otf);
+}
+
+h2{
+font-family: f2;
+font-size: xx-large;
+color: rgb(255, 94, 0);
+letter-spacing: 1px;
+    }
+
+    #span1{
+
+background-color: rgb(255, 196, 0);
+padding: 10px;
+border-radius: 10px;
+    }
+
+    #button1{
+
+border: 0px ;
+        border-radius: 10px;
+
+        padding: 10px;
+
+        font-family: f3;
+
+        font-size: larger;
+
+background-color: rgb(201, 37, 37);
+    }
+
+    #button1:hover{
+
+cursor: pointer;
+
+    }
+
+table{
+
+font-family: f3;
+margin-top: 50px;
+font-size: larger;
+background-color: rgb(255, 213, 96);
+border-radius: 10px;
+padding: 10px;
+margin-bottom: 30px;
+}
+
+h3{
+margin-top: 30px;
+font-family: f2;
+
+}
+
+.a2{
+    color: rgb(0, 0, 0);
+font-size: x-large;
+width: 300px;
+border-radius: 10px;
+font-family: f3;
+}
+
+.a1{
+width: 400px;
+margin-left: 100px;
+}
+
+.a3{
+
+margin-left: 10px;
+
+}
+
+.a4{
+position: absolute;
+margin-left: 200px;
+}
+
